@@ -1,1 +1,10 @@
 <h1> HELLLO YEH </h1>
+<%= link_to 'New Note', new_note_path %>
+
+<% if @notes.any? %>
+	<ul>
+		<% @notes.each do |note| %>
+			<li> <%= note.title %> </li>
+		<% end %>
+	</ul>
+<% end %>
