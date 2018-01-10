@@ -1,0 +1,15 @@
+<%= form_for @note do |f| %>
+
+<div>
+    <%= f.label :title %>
+   	<%= f.text_field :title%>
+</div>
+<div>
+    <%= f.label :body %>
+   	<%= f.text_area :body, data: { provider: 'summernote' }%>
+</div>
+
+<%= f.submit 'save' %>
+<%= link_to 'close', notes_path %>
+
+<% end %>
