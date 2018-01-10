@@ -14,6 +14,10 @@ gem 'coffee-rails', '~> 4.2' # Use CoffeeScript for .coffee assets and views
 gem 'turbolinks', '~> 5' # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'jbuilder', '~> 2.5' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
+gem 'summernote-rails'
+gem 'bootstrap-sass'
+gem 'jquery-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
